@@ -3,17 +3,69 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <!-- <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <link rel="stylesheet" href="base.css">
+    <title>Kideo Player</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
+    <div class="main">
+      <button class="left" onclick="playPrevious()"><</button>
+      <h1 class="subtext-0">Aaj Bhi</h1>
+    <video id="video-0" controls height="700px" width="900px">
+      <source src="./assets/Aaj_Bhi.mp4" type="video/mp4">
+    </video>
+    <h1 class="subtext-1">Wonderwall</h1>
+    <video id="video-1" controls height="700px" width="900px">
+      <source src="./assets/Wonderwall.mp4" type="video/mp4">
+    </video>
+    <h1 class="subtext-2">Hakeemo</h1>
+    <video id="video-2" controls height="700px" width="900px">
+      <source src="./assets/Hakeemo.mp4" type="video/mp4">
+    </video>
+    <h1 class="subtext-3">Photograph</h1>
+    <video id="video-3" controls height="700px" width="900px">
+      <source src="./assets/Ed_Sheeran_-_Photograph_Official_Music_Video.mp4" type="video/mp4">
+    </video>
+    <h1 class="subtext-4">Thinking out loud</h1>
+    <video id="video-4" controls height="700px" width="900px">
+      <source src="./assets/Ed_Sheeran_-_Thinking_Out_Loud_Official_Music_Video.mp4" type="video/mp4">
+    </video>
+    <h1 class="subtext-5">Say you won't let go</h1>
+    <video id="video-5" controls height="700px" width="900px">
+      <source src="./assets/James_Arthur_-_Say_You_Wont_Let_Go.mp4" type="video/mp4">
+    </video>
+    <h1 class="subtext-6">Shallow</h1>
+    <video id="video-6" controls height="700px" width="900px">
+      <source src="./assets/Lady_Gaga_Bradley_Cooper_-_Shallow_from_A_Star_Is_Born_Official_Music_Video.mp4" type="video/mp4">
+    </video>
+    <h1 class="subtext-7">Someone you loved</h1>
+    <video id="video-7" controls height="700px" width="900px">
+      <source src="./assets/Lewis_Capaldi_-_Someone_You_Loved.mp4" type="video/mp4">
+    </video>
+    <h1 class="subtext-8">Liggi</h1>
+    <video id="video-8" controls height="700px" width="900px">
+      <source src="./assets/Ritviz_-_Liggi_Official_Music_Video.mp4" type="video/mp4">
+    </video>
+    <h1 class="subtext-9">Sage</h1>
+    <video id="video-9" controls height="700px" width="900px">
+      <source src="./assets/Ritviz_-_Sage_Official_Music_Video.mp4" type="video/mp4">
+    </video>
+    <h1 class="subtext-10">Aaoge tum kabhi</h1>
+    <video id="video-10" controls height="700px" width="900px">
+      <source src="./assets/The_Local_Train_-_Aalas_Ka_Pedh_-_Aaoge_Tum_Kabhi_Official_Audio.mp4" type="video/mp4">
+    </video>
+    <h1 class="subtext-11">Choo Lo</h1>
+    <video id="video-11" controls height="700px" width="900px">
+      <source src="./assets/The_Local_Train_-_Aalas_Ka_Pedh_-_Choo_Lo_Official_Audio.mp4" type="video/mp4">
+    </video>
+    <h1 class="subtext-12">Khudi</h1>
+    <video id="video-12" controls height="700px" width="900px">
+      <source src="./assets/The_Local_Train_-_Khudi_Official.mp4" type="video/mp4">
+    </video>
+    <button class="right" onclick="playNext()">></button>
+  </div>
     <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
+    <script src="./renderer.js" unsafe-inline></script>
   </body>
 </html>

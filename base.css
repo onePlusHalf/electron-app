@@ -1,0 +1,29 @@
+.main {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+    margin-left: 5%;;
+}
+.left {
+    height: 50px;
+    width: 50px;
+    margin-top: 250px;
+    float: left;
+}
+
+
+.right {
+    height: 50px;
+    width: 50px;
+    margin-top: 250px;
+    float: right;
+}
+
+video {
+    display: none;
+    margin-top: 0;
+}
+
+#video-0 {
+    display: block;
+}
